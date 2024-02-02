@@ -9,7 +9,7 @@ const page = () => {
             <div className="flex justify-between">
                 <div className=" w-[40%] helvetica flex flex-col space-y-7">
                     <div className="ava flex">
-                        <LuDot className="text-[20px] text-green-500"/>
+                        <LuDot className="text-[20px] text-green-500 dot-animate"/>
                         <h1 className="t-ava">Available for hire</h1>
                     </div> 
                     <div className="email flex text-[1.7rem] items-center">

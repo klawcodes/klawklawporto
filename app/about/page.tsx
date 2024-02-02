@@ -4,7 +4,11 @@ const About = () => {
   return (
     <>
         <div className="w-full px-10 text-neutral-600 pt-[50px]">
-            <p className="text-[80px] leading-[5rem] helvetica mb-3">HELLO, THIS IS KLAW⁘. <br /> A JUNIOR PROGRAMMER & <br /> <p className='mondwest italic text-[100px]'>dIgiTal ArTiSt </p></p>
+            <p className="text-[80px] leading-[5rem] helvetica mb-3">HELLO, THIS IS KLAW⁘. <br /> A JUNIOR PROGRAMMER & <br /> 
+            <span className='relative'>
+              <h2 className='mondwest italic text-[100px]'>dIgiTal ArTiSt </h2>
+            </span>
+            </p>
             <p className="text-[12px] leading-[1rem] helvetica">BASED IN BEKASI _ INDONESIA<br></br>WORKING WORLDWIDE</p>
             <div className='flex space-x-5 mt-20'>
               <div className="flex flex-col mb-10">

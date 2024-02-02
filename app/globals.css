@@ -32,3 +32,19 @@
 .bold {
     font-weight: bold;
 }
+
+.dot-animate {
+    animation: pulse 2s infinite; /* pulse adalah nama keyframes, 2s adalah durasi, infinite berarti animasi akan berulang tanpa henti */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Skala awal dot */
+    }
+    50% {
+        transform: scale(2); /* Skala tengah dot saat berdenyut */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke skala awal dot */
+    }
+}
