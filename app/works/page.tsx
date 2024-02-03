@@ -13,7 +13,7 @@ const Works = () => {
 
   return (
     <>
-        <div className="w-full px-10 text-neutral-600 pt-[50px] pb-[50px]">
+        <div className="w-full px-10 text-neutral-600 pt-[50px] pb-[50px]" id="works">
             <div>
                 <h2 className="vivaldi text-[6rem]">Featured Works</h2>
                 <div className="flex space-x-5 mb-10">
@@ -24,6 +24,7 @@ const Works = () => {
                 <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'MIDNIGHT KOALA' ? 'bg-gray-700 text-white' : ''} ${selectedCategory === 'MIDNIGHT KOALA' && 'text-gray-300'}`} onClick={() => handleCategoryChange('MIDNIGHT KOALA')}>MIDNIGHT KOALA</button>
                 </div>
                 <div className="py-5 grid grid-cols-4 gap-y-[6rem]">
+                    
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
                             <h2 className="helvetica mr-2 text-[20px] font-bold">CAPRES FACTS</h2>

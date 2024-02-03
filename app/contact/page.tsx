@@ -5,7 +5,7 @@ import { LuDot } from "react-icons/lu";
 const page = () => {
   return (
     <>
-        <div className="w-full px-10 text-neutral-600 pt-[50px] mb-[7rem]">
+        <div className="w-full px-10 text-neutral-600 pt-[50px] mb-[7rem]" id="contact">
             <div className="flex justify-between">
                 <div className=" w-[40%] helvetica flex flex-col space-y-7">
                     <div className="ava flex">
@@ -14,15 +14,15 @@ const page = () => {
                     </div> 
                     <div className="email flex text-[1.7rem] items-center">
                         <MdOutlineMailOutline className="mb-2 mr-[1rem]"/>
-                        <h1 className="font-bold"><a href="mailto:hi@klaw.my.id" target="_blank">hi@klaw.my.id</a></h1>
+                        <h1 className="font-bold hover:underline"><a href="mailto:hi@klaw.my.id" target="_blank">hi@klaw.my.id</a></h1>
                     </div>
                     <div className="email flex text-[1.7rem] items-center">
                         <AiOutlineGithub className="mb-2 mr-[1rem]"/>
-                        <h1 className="font-bold"><a href="https://github.com/klawcodes" target="_blank">klawcodes</a></h1>
+                        <h1 className="font-bold hover:underline"><a href="https://github.com/klawcodes" target="_blank">klawcodes</a></h1>
                     </div>
                     <div className="email flex text-[1.7rem] items-center">
                         <AiOutlineTwitter className="mb-2 mr-[1rem]"/>
-                        <h1 className="font-bold"><a href="https://twitter.com/0xKlaw" target="_blank">@0xKlaw</a></h1>
+                        <h1 className="font-bold hover:underline"><a href="https://twitter.com/0xKlaw" target="_blank">@0xKlaw</a></h1>
                     </div>
                 </div>
                 <div className='w-[50%]'>
