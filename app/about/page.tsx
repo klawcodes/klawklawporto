@@ -4,12 +4,19 @@ import { useState, useEffect } from 'react';
 import Sparkle from "react-sparkle";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const About = () => {
   const [currentText, setCurrentText] = useState<string>('dIgiTal ArTiSt');
 
+  useEffect(() =>{
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   useEffect(() => {
-    const textArray = ['DiGItAl ARtIST', 'dIGitAL arTIsT', 'DigitaL artiSt', 'DigItal aRtiSt', 'dIgiTal ArTiSt'];
+    const textArray = ['DiGItAl ARtIST', 'dIGitAL arTIsT', 'DigitaL artiSt', 'DigItal aRtiSt', 'DiGItaL ARTiST', 'dIgiTal ArTiSt'];
     let currentIndex = 0;
 
     const intervalId = setInterval(() => {
@@ -74,11 +81,11 @@ const About = () => {
           {el}{" "}
         </motion.span>
       ))}
-        <p className="text-[12px] leading-[1rem] helvetica mt-4">
+        <p className="text-[12px] leading-[1rem] helvetica mt-4" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1000">
           BASED IN BEKASI _ INDONESIA<br></br>WORKING WORLDWIDE
         </p>
         <div className="flex space-x-5 mt-20">
-          <div className="relative group flex flex-col">
+          <div className="relative group flex flex-col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <a href="https://github.com/klawcodes" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
               <div className="h-300 relative">
                 <Image src="/img/klaw.png" width={300} height={300} alt='klaw' className='rounded-3xl'/>
@@ -93,7 +100,7 @@ const About = () => {
             </p>
             <h2 className="text-[19px] helvetica">KLAW</h2>
           </div>
-          <div className="relative group flex flex-col">
+          <div className="relative group flex flex-col" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
             <a href="https://www.instagram.com/riotrevenger/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
               <div className="h-300 relative">
                 <Image src="/img/riot.png" width={300} height={300} alt='riot' className='rounded-3xl'/>
@@ -108,7 +115,7 @@ const About = () => {
             </p>
             <h2 className="text-[19px] helvetica">RIOT REVENGER</h2>
           </div>
-          <div className="relative group flex flex-col">
+          <div className="relative group flex flex-col" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
             <a href="https://www.instagram.com/neonpaperkid/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
               <div className="h-300 relative">
                 <Image src="/img/npk.png" width={300} height={300} alt='npk' className='rounded-3xl'/>
@@ -123,7 +130,7 @@ const About = () => {
             </p>
             <h2 className="text-[19px] helvetica">NEON PAPER KID</h2>
           </div>
-          <div className="relative group flex flex-col">
+          <div className="relative group flex flex-col" data-aos="fade-up" data-aos-delay="8  00" data-aos-duration="1000">
             <a href="https://open.spotify.com/artist/6l6neQdiyZXEXDDJAINfIm?si=3u3BXLfaQu-SE93yqUd2KA" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
               <div className="h-300 relative">
                 <Image src="/img/mk.png" width={300} height={300} alt='mk' className='rounded-3xl'/>

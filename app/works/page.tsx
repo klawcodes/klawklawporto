@@ -2,7 +2,9 @@
 
 import { DiReact, DiHtml5, DiCss3, DiJsBadge, DiPython } from "react-icons/di"
 import { SiBlender, SiVuedotjs, SiElectron, SiAdobeillustrator, SiAdobephotoshop, SiAdobeaftereffects, SiAbletonlive } from "react-icons/si";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Works = () => {
     const [selectedCategory, setSelectedCategory] = useState('ALL');
@@ -11,10 +13,15 @@ const Works = () => {
         setSelectedCategory(category);
     };
 
+    useEffect(() =>{
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
   return (
     <>
         <div className="w-full px-10 text-neutral-600 pt-[50px] pb-[50px]" id="works">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <h2 className="vivaldi text-[6rem]">Featured Works</h2>
                 <div className="flex space-x-5 mb-10">
                 <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'ALL' ? 'bg-gray-700 text-white' : ''}`} onClick={() => handleCategoryChange('ALL')}>ALL</button>
@@ -23,7 +30,7 @@ const Works = () => {
                 <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'NEON PAPER KID' ? 'bg-gray-700 text-white' : ''} ${selectedCategory === 'NEON PAPER KID' && 'text-gray-300'}`} onClick={() => handleCategoryChange('NEON PAPER KID')}>NEON PAPER KID</button>
                 <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'MIDNIGHT KOALA' ? 'bg-gray-700 text-white' : ''} ${selectedCategory === 'MIDNIGHT KOALA' && 'text-gray-300'}`} onClick={() => handleCategoryChange('MIDNIGHT KOALA')}>MIDNIGHT KOALA</button>
                 </div>
-                <div className="py-5 grid grid-cols-4 gap-y-[6rem]">
+                <div className="py-5 grid grid-cols-4 gap-y-[6rem]" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
