@@ -16,13 +16,13 @@ const Header = () => {
     <>
       <div className="w-full flex justify-between px-10 py-5 bg-white shadow-lg text-neutral-600 sticky top-0 z-50">
         <div className="vivaldi bold text-5xl text-bold" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Klaw.</div>
-        <ul className="flex space-x-10 pt-2">
+        <ul className="flex space-x-10 pt-2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
           <Link activeClass="active" to="home" offset={-100} spy={true} smooth={true}>
             <motion.li
               whileHover={{ scale: 1.1 }}
               whileTap={{
                 scale: 0.9,
-              }} className="cursor-pointer" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
+              }} className="cursor-pointer" 
             >
                 HOME
             </motion.li>
@@ -32,7 +32,7 @@ const Header = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{
                 scale: 0.9,
-              }} className="cursor-pointer" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"
+              }} className="cursor-pointer"
             >
                 ABOUT
             </motion.li>
@@ -42,7 +42,7 @@ const Header = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{
                 scale: 0.9,
-              }} className="cursor-pointer" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000"
+              }} className="cursor-pointer"
             >
                 WORKS
             </motion.li>
@@ -52,7 +52,7 @@ const Header = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{
                 scale: 0.9,
-              }} className="cursor-pointer" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"
+              }} className="cursor-pointer"
             >
                 CONTACT
             </motion.li>

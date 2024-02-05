@@ -130,7 +130,7 @@ const About = () => {
             </p>
             <h2 className="text-[19px] helvetica">NEON PAPER KID</h2>
           </div>
-          <div className="relative group flex flex-col" data-aos="fade-up" data-aos-delay="8  00" data-aos-duration="1000">
+          <div className="relative group flex flex-col" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
             <a href="https://open.spotify.com/artist/6l6neQdiyZXEXDDJAINfIm?si=3u3BXLfaQu-SE93yqUd2KA" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
               <div className="h-300 relative">
                 <Image src="/img/mk.png" width={300} height={300} alt='mk' className='rounded-3xl'/>
