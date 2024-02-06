@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.bodi {
+    overflow-x: clip;
+}
+
+.swiper-pagination-bullet {
+    /* Atur posisi relatif terhadap container Swiper */
+    position: absolute;
+    /* Atur posisi masing-masing bullet pagination */
+    top: 50%; /* Atur bullet berada di tengah vertikal */
+    transform: translateY(-50%); /* Geser bullet ke posisi tengah secara vertikal */
+    left: 10px; /* Atur jarak dari kiri */
+  }  
+
 @font-face {
     font-family: 'font title';
     src: url('../fonts/vivaldi.otf');
