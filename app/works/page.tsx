@@ -7,30 +7,72 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 
 const Works = () => {
-    const [selectedCategory, setSelectedCategory] = useState('ALL');
+    const [selectedCategory, setSelectedCategory] = useState("ALL");
 
     const handleCategoryChange = (category: string) => {
-        setSelectedCategory(category);
+      setSelectedCategory(category);
     };
 
-    useEffect(() =>{
-        AOS.init();
-        AOS.refresh();
-      }, []);
+    useEffect(() => {
+      AOS.init();
+      AOS.refresh();
+    }, []);
+
+    const [windowWidth, setWindowWidth] = useState(0);
+
+    useEffect(() => {
+      function handleResize() {
+        setWindowWidth(window.innerWidth);
+      }
+
+      window.addEventListener("resize", handleResize);
+      handleResize(); // Set initial window width
+
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
   return (
     <>
         <div className="w-full px-10 text-neutral-600 pt-[50px] pb-[50px]" id="works">
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <h2 className="vivaldi text-[6rem]">Featured Works</h2>
-                <div className="flex space-x-5 mb-10">
-                <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'ALL' ? 'bg-gray-700 text-white' : ''}`} onClick={() => handleCategoryChange('ALL')}>ALL</button>
-                <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'KLAW' ? 'bg-gray-700 text-white' : ''} ${selectedCategory === 'KLAW' && 'text-gray-300'}`} onClick={() => handleCategoryChange('KLAW')}>KLAW</button>
-                <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'RIOT REVENGER' ? 'bg-gray-700 text-white' : ''} ${selectedCategory === 'RIOT REVENGER' && 'text-gray-300'}`} onClick={() => handleCategoryChange('RIOT REVENGER')}>RIOT REVENGER</button>
-                <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'NEON PAPER KID' ? 'bg-gray-700 text-white' : ''} ${selectedCategory === 'NEON PAPER KID' && 'text-gray-300'}`} onClick={() => handleCategoryChange('NEON PAPER KID')}>NEON PAPER KID</button>
-                <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out ${selectedCategory === 'MIDNIGHT KOALA' ? 'bg-gray-700 text-white' : ''} ${selectedCategory === 'MIDNIGHT KOALA' && 'text-gray-300'}`} onClick={() => handleCategoryChange('MIDNIGHT KOALA')}>MIDNIGHT KOALA</button>
+                <h2 className="vivaldi text-[6rem] max-[640px]:text-[5rem] max-[640px]:leading-[4.2rem]">Featured Works</h2>
+                <div className='flex flex-wrap space-x-5 mb-10 max-[640px]:grid max-[640px]:grid-cols-2 max-[640px]:gap-x-5 max-[640px]:gap-y-5 max-[640px]:space-x-0 max-[640px]:text-[5px]'>
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    ${selectedCategory === 'ALL' ? 'bg-gray-700 text-white' : ''} 
+                    ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`}  
+                    onClick={() => handleCategoryChange('ALL')}
+                    style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                    >ALL</button>
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    ${selectedCategory === 'KLAW' ? 'bg-gray-700 text-white' : ''} 
+                    ${selectedCategory === 'KLAW' && 'text-gray-300'} 
+                    ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 
+                    onClick={() => handleCategoryChange('KLAW')}
+                    style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                    >KLAW</button>
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    ${selectedCategory === 'RIOT REVENGER' ? 'bg-gray-700 text-white' : ''} 
+                    ${selectedCategory === 'RIOT REVENGER' && 'text-gray-300'} 
+                    ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 
+                    onClick={() => handleCategoryChange('RIOT REVENGER')}
+                    style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                    >RIOT REVENGER</button>
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    ${selectedCategory === 'NEON PAPER KID' ? 'bg-gray-700 text-white' : ''} 
+                    ${selectedCategory === 'NEON PAPER KID' && 'text-gray-300'} 
+                    ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 
+                    onClick={() => handleCategoryChange('NEON PAPER KID')}
+                    style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                    >NEON PAPER KID</button>
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    ${selectedCategory === 'MIDNIGHT KOALA' ? 'bg-gray-700 text-white' : ''} 
+                    ${selectedCategory === 'MIDNIGHT KOALA' && 'text-gray-300'} 
+                    ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 
+                    onClick={() => handleCategoryChange('MIDNIGHT KOALA')}
+                    style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                    >MIDNIGHT KOALA</button>
                 </div>
-                <div className="py-5 grid grid-cols-4 gap-y-[6rem]" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div className='py-5 grid grid-cols-4 gap-y-[6rem] max-[640px]:grid max-[640px]:grid-cols-1 max-[640px]:gap-y-[3rem]' data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">

@@ -19,7 +19,7 @@ const Contact = () => {
         className="w-full px-10 text-neutral-600 pt-[50px] mb-[7rem]"
         id="contact"
       >
-        <div className="flex justify-between">
+        <div className="flex justify-between max-[640px]:flex-col max-[640px]:justify-center">
           <div className=" w-[40%] helvetica flex flex-col space-y-7">
             <div className="ava flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <LuDot className="text-[20px] text-green-500 dot-animate" />
@@ -50,11 +50,11 @@ const Contact = () => {
               </h1>
             </div>
           </div>
-          <div className="w-[50%]">
-            <p className="text-[4rem] text-end leading-[4rem] helvetica" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+          <div className="w-[50%] max-[640px]:w-[100%] max-[640px]:mt-5">
+            <p className="text-[4rem] text-end leading-[4rem] helvetica max-[640px]:text-[3rem] max-[640px]:leading-[3rem]" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
               I WOULD LOVE TO HEAR FROM YOU.
               <br />⁘ LETS WORK
-              <p className="vivaldi italic text-[8rem]" data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000"> Together.</p>
+              <p className="vivaldi italic text-[8rem] max-[640px]:text-[5rem]" data-aos="fade-up" data-aos-delay="1400" data-aos-duration="1000"> Together.</p>
             </p>
           </div>
         </div>

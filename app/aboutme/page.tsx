@@ -30,7 +30,9 @@ Join me on this exciting journey where we`ll explore the digital universe togeth
                         <div className='mb-7' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
                             <p className='helvetica text-[20px] pb-5'>PROGRAMMING LANGUAGES & TOOLS</p>
                             <div className="grid grid-cols-4 gap-x-[7rem] gap-y-[2rem]">
-                                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt='Javascript' className='transition duration-300 filter grayscale hover:filter-none w-10'/>
+                                <div className='relative w-[60px] max-[360px]:w-[500px]:'>
+                                    <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" fill={true} alt='Javascript' className='transition duration-300 filter grayscale hover:filter-none inset-0'/>
+                                </div>
                                 <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width={60} height={60} alt='Javascript' className='transition duration-300 filter grayscale hover:filter-none'/>
                                 <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg" width={60} height={60} alt='Javascript' className='transition duration-300 filter grayscale hover:filter-none'/>
                                 <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width={60} height={60} alt='Javascript' className='transition duration-300 filter grayscale hover:filter-none'/>
