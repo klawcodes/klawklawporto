@@ -19,7 +19,7 @@ const Aboutme = () => {
         <div className="w-full px-10 text-neutral-600 pt-[50px] mb-10 max-[390px]:px-5" id='about'>
             <div className="flex max-[640px]:flex-col">
                 <div className=" w-[40%] max-[640px]:w-[100%]">
-                    <h2 className="vivaldi text-[6rem] max-[640px]:text-[5rem]" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">About Me.</h2>
+                    <h2 className="vivaldi text-[6rem] max-[640px]:text-[5rem] max-[390px]:leading-[4rem]" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">About Me.</h2>
                     <p className="helvetica text-[20px]" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">Hey there! I`m Muhammad Dimas, a Junior Programmer and Digital Artist who`s all about design, music, and coding cool stuff. I got into programming back in 2020 when I decided to build my own Portfolio Website, and since then, I`ve been hooked! <br /><br />
 
 You`ll usually find me lost in the world of creativity, whether I`m crafting 3D wonders, designing eye-catching graphics, or grooving to my latest music creation. Programming isn`t just a hobby for me; it`s my passion.<br /><br />
