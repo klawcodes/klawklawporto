@@ -66,7 +66,7 @@ const About = () => {
 
   return (
     <>
-      <div className="w-full px-10 text-neutral-600 pt-[50px]" id="home">
+      <div className="w-full px-10 text-neutral-600 pt-[50px] max-[390px]:px-5" id="home">
         {textArrayy.map((el, i) => (
           <motion.span
             initial={{ opacity: 0 }}

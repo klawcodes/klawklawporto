@@ -33,38 +33,38 @@ const Works = () => {
 
   return (
     <>
-        <div className="w-full px-10 text-neutral-600 pt-[50px] pb-[50px]" id="works">
+        <div className="w-full px-10 text-neutral-600 pt-[50px] pb-[50px] max-[390px]:px-5" id="works">
             <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <h2 className="vivaldi text-[6rem] max-[640px]:text-[5rem] max-[640px]:leading-[4.2rem]">Featured Works</h2>
                 <div className='flex flex-wrap space-x-5 mb-10 max-[640px]:grid max-[640px]:grid-cols-2 max-[640px]:gap-x-5 max-[640px]:gap-y-5 max-[640px]:space-x-0 max-[640px]:text-[5px]'>
-                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out max-[390px]:text-[9px] 
                     ${selectedCategory === 'ALL' ? 'bg-gray-700 text-white' : ''} 
                     ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`}  
                     onClick={() => handleCategoryChange('ALL')}
                     style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >ALL</button>
-                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out max-[390px]:text-[9px]
                     ${selectedCategory === 'KLAW' ? 'bg-gray-700 text-white' : ''} 
                     ${selectedCategory === 'KLAW' && 'text-gray-300'} 
                     ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 
                     onClick={() => handleCategoryChange('KLAW')}
                     style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >KLAW</button>
-                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out max-[390px]:text-[9px]
                     ${selectedCategory === 'RIOT REVENGER' ? 'bg-gray-700 text-white' : ''} 
                     ${selectedCategory === 'RIOT REVENGER' && 'text-gray-300'} 
                     ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 
                     onClick={() => handleCategoryChange('RIOT REVENGER')}
                     style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >RIOT REVENGER</button>
-                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out max-[390px]:text-[9px]
                     ${selectedCategory === 'NEON PAPER KID' ? 'bg-gray-700 text-white' : ''} 
                     ${selectedCategory === 'NEON PAPER KID' && 'text-gray-300'} 
                     ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 
                     onClick={() => handleCategoryChange('NEON PAPER KID')}
                     style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                     >NEON PAPER KID</button>
-                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out 
+                    <button className={`helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out max-[390px]:text-[9px]
                     ${selectedCategory === 'MIDNIGHT KOALA' ? 'bg-gray-700 text-white' : ''} 
                     ${selectedCategory === 'MIDNIGHT KOALA' && 'text-gray-300'} 
                     ${windowWidth <= 640 ? 'text-[10px] px-[3.5rem] py-[0.5rem]' : ''}`} 

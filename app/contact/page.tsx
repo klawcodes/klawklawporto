@@ -3,6 +3,7 @@
 import { MdOutlineMailOutline } from "react-icons/md";
 import { AiOutlineGithub, AiOutlineTwitter } from "react-icons/ai";
 import { LuDot } from "react-icons/lu";
+import Image from 'next/image'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
@@ -13,10 +14,18 @@ const Contact = () => {
     AOS.refresh();
   }, []);
 
+  const Icons = {
+    width: '30px',
+    height: 'auto',
+    '@media (min-width: 360px)': {
+      width: '5px' // Ubah lebar gambar saat lebar layar <= 640px
+    }
+  };
+
   return (
     <>
       <div
-        className="w-full px-10 text-neutral-600 pt-[50px] mb-[7rem]"
+        className="w-full px-10 text-neutral-600 pt-[50px] mb-[7rem] max-[390px]:px-5"
         id="contact"
       >
         <div className="flex justify-between max-[640px]:flex-col max-[640px]:justify-center">
@@ -26,7 +35,14 @@ const Contact = () => {
               <h1 className="t-ava">Available for hire</h1>
             </div>
             <div className="email flex text-[1.7rem] items-center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-              <MdOutlineMailOutline className="mb-2 mr-[1rem]" />
+              <Image 
+                src="https://www.svgrepo.com/show/533208/mail-heart.svg" 
+                alt='email' 
+                style={Icons} 
+                width={0} 
+                height={0} 
+                className='mb-2 mr-[1rem]'
+              />
               <h1 className="font-bold hover:underline">
                 <a href="mailto:hi@klaw.my.id" target="_blank">
                   hi@klaw.my.id
@@ -34,7 +50,14 @@ const Contact = () => {
               </h1>
             </div>
             <div className="email flex text-[1.7rem] items-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-              <AiOutlineGithub className="mb-2 mr-[1rem]" />
+              <Image 
+                src="https://www.svgrepo.com/show/509967/github.svg" 
+                alt='github' 
+                style={Icons} 
+                width={0} 
+                height={0} 
+                className='mb-2 mr-[1rem]'
+              />
               <h1 className="font-bold hover:underline">
                 <a href="https://github.com/klawcodes" target="_blank">
                   klawcodes
@@ -42,7 +65,14 @@ const Contact = () => {
               </h1>
             </div>
             <div className="email flex text-[1.7rem] items-center" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-              <AiOutlineTwitter className="mb-2 mr-[1rem]" />
+              <Image 
+                src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" 
+                alt='x' 
+                style={Icons} 
+                width={0} 
+                height={0} 
+                className='mb-2 mr-[1rem]'
+              />
               <h1 className="font-bold hover:underline">
                 <a href="https://twitter.com/0xKlaw" target="_blank">
                   @0xKlaw
