@@ -110,7 +110,7 @@ const Header = () => {
                 <Link 
                   to="contact"
                   spy={true}
-                  offset={-70}
+                  offset={-30}
                   smooth={true}
                 >CONTACT</Link>
                 </li> 
