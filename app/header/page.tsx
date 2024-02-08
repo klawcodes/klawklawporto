@@ -21,12 +21,12 @@ const Header = () => {
       <nav className="w-full h-24 shadow-xl bg-white sticky top-0 z-[998]">
         {/* desktop */}
         <div className="flex items-center justify-between h-full px-[2rem] py-4 w-full max-[390px]:px-[1rem]">
-          <h2 className="logo vivaldi font-bold text-[4rem] text-neutral-600">
+          <h2 className="logo vivaldi font-bold text-[4rem] text-neutral-600 hover:cursor-pointer">
             <Link
               activeClass="active"
               to="home"
               spy={true}
-              offset={-50}
+              offset={-100}
               smooth={true}
             >
               Klaw.
@@ -38,7 +38,7 @@ const Header = () => {
                 <Link 
                   to="home"
                   spy={true}
-                  offset={-50}
+                  offset={-100}
                   smooth={true}
                 >HOME</Link>
               </li>

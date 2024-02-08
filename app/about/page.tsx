@@ -46,7 +46,7 @@ const About = () => {
   }, []);
 
   const textArrayp = currentText.split(" ");
-  const textArrayy = "HELLO, THIS IS KLAW⁘.".split(" ");
+  const textArrayy = "HELL°, THIS IS KLAW⁘.".split(" ");
   const textArrayy2 = "A JUNIOR PROGRAMMER &".split(" ");
 
   const [isMobile, setIsMobile] = useState(false);
