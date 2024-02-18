@@ -103,7 +103,7 @@ const Works = () => {
                     </div>
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
-                            <h2 className="helvetica mr-2 text-[20px] font-bold">Awas Imsak!</h2>
+                            <h2 className="helvetica mr-2 text-[20px] font-bold">AWAS IMSAK!</h2>
                             <SiNextdotjs title="Next JS" className="icon mb-1"/>
                             <DiHtml5 title="HTML" className="icon mb-1"/>
                             <DiCss3 title="CSS" className="icon mb-1"/>  
