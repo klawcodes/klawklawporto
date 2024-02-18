@@ -1,7 +1,7 @@
 'use client'
 
 import { DiReact, DiHtml5, DiCss3, DiJsBadge, DiPython } from "react-icons/di"
-import { SiBlender, SiVuedotjs, SiElectron, SiAdobeillustrator, SiAdobephotoshop, SiAdobeaftereffects, SiAbletonlive } from "react-icons/si";
+import { SiBlender, SiNextdotjs, SiElectron, SiAdobeillustrator, SiAdobephotoshop, SiAdobeaftereffects, SiAbletonlive } from "react-icons/si";
 import { useState, useEffect } from 'react'
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -103,11 +103,13 @@ const Works = () => {
                     </div>
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
-                            <h2 className="helvetica mr-2 text-[20px] font-bold">PLATFORMER GAME</h2>
-                            <DiPython title="Javascript" className="icon mb-1"/>
+                            <h2 className="helvetica mr-2 text-[20px] font-bold">AWAS IMSAK!</h2>
+                            <SiNextdotjs title="next js" className="icon mb-1"/>
+                            <DiHtml5 title="HTML" className="icon mb-1"/>
+                            <DiCss3 title="CSS" className="icon mb-1"/>  
                         </div>
                         <p className="helvetica mb-3 text-[16px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos mollitia harum voluptates, </p>
-                        <a href="https://github.com/secretego/platformer-game" target="_blank"><button className="helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out">VIEW WORK</button></a>
+                        <a href="https://github.com/klawcodes/awas-imsak" target="_blank"><button className="helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out">VIEW WORK</button></a>
                     </div>
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
