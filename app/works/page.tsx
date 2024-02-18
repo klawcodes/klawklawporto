@@ -94,7 +94,7 @@ const Works = () => {
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
                             <h2 className="helvetica mr-2 text-[20px] font-bold">HOLOLIVE ID</h2>
-                            <DiReact title="Javascript" className="icon mb-1"/>
+                            <DiReact title="React JS" className="icon mb-1"/>
                             <DiHtml5 title="HTML" className="icon mb-1"/>
                             <DiCss3 title="CSS" className="icon mb-1"/>  
                         </div>
@@ -103,8 +103,8 @@ const Works = () => {
                     </div>
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
-                            <h2 className="helvetica mr-2 text-[20px] font-bold">AWAS IMSAK!</h2>
-                            <SiNextdotjs title="next js" className="icon mb-1"/>
+                            <h2 className="helvetica mr-2 text-[20px] font-bold">Awas Imsak!</h2>
+                            <SiNextdotjs title="Next JS" className="icon mb-1"/>
                             <DiHtml5 title="HTML" className="icon mb-1"/>
                             <DiCss3 title="CSS" className="icon mb-1"/>  
                         </div>
@@ -114,7 +114,7 @@ const Works = () => {
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
                             <h2 className="helvetica mr-2 text-[20px] font-bold">HAND SIGN DETECTOR</h2>
-                            <DiPython title="Javascript" className="icon mb-1"/>
+                            <DiPython title="Python" className="icon mb-1"/>
                         </div>
                         <p className="helvetica mb-3 text-[16px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos mollitia harum voluptates, </p>
                         <a href="https://github.com/klawcodes/hand-sign-detector" target="_blank"><button className="helvetica bg-gray-300 hover:bg-gray-700 text-gray-700 hover:text-gray-300 py-1 px-8 text-[13px] rounded-full transition duration-300 ease-in-out">VIEW WORK</button></a>
@@ -122,7 +122,7 @@ const Works = () => {
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'KLAW' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
                             <h2 className="helvetica mr-2 text-[20px] font-bold">REVENGER</h2>
-                            <DiReact title="Javascript" className="icon mb-1"/>
+                            <DiReact title="React JS" className="icon mb-1"/>
                             <DiHtml5 title="HTML" className="icon mb-1"/>
                             <DiCss3 title="CSS" className="icon mb-1"/>  
                         </div>
@@ -132,7 +132,7 @@ const Works = () => {
                     <div className={`${selectedCategory === 'ALL' || selectedCategory === 'RIOT REVENGER' ? '' : 'hidden'}`}>
                         <div className="flex items-center mb-3">
                             <h2 className="helvetica mr-2 text-[20px] font-bold">DEMONS.</h2>
-                            <SiBlender title="Javascript" className="icon mb-1"/> 
+                            <SiBlender title="Blender" className="icon mb-1"/> 
                             <SiAdobeillustrator title="Adobe Illustrator" className="icon mb-1 ml-1" />
                         </div>
                         <p className="helvetica mb-3 text-[16px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos mollitia harum voluptates, </p>
