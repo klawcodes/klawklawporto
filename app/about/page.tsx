@@ -118,7 +118,7 @@ const About = () => {
         >
           BASED IN BEKASI _ INDONESIA<br></br>WORKING WORLDWIDE
         </p>
-        <div className="flex space-x-5 mt-20">
+        <div className="flex place-content-around mt-20">
           {isMobile ? (
             <Swiper
               spaceBetween={50}
